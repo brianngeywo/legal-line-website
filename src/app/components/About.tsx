@@ -1,3 +1,5 @@
+import DelayedFadeIn from "../effects/DelayedFadeIn";
+
 export default function About() {
   return (
     <section id="about" className="py-12 md:py-24 bg-white">
@@ -39,22 +41,23 @@ export default function About() {
             </p>
 
             {/* Mission & Vision Cards */}
-            <DelayedFadeIn delay={300} key={index}></DelayedFadeIn>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="bg-green-50 p-5 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-green-800 mb-2">Mission</h4>
-                <p className="text-gray-700">
-                  To deliver exceptional legal services with integrity and
-                  professionalism.
-                </p>
+            <DelayedFadeIn delay={300}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="bg-green-50 p-5 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-green-800 mb-2">Mission</h4>
+                  <p className="text-gray-700">
+                    To deliver exceptional legal services with integrity and
+                    professionalism.
+                  </p>
+                </div>
+                <div className="bg-green-50 p-5 rounded-lg shadow-sm">
+                  <h4 className="font-semibold text-green-800 mb-2">Vision</h4>
+                  <p className="text-gray-700">
+                    To be the leading legal service provider in South Sudan.
+                  </p>
+                </div>
               </div>
-              <div className="bg-green-50 p-5 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-green-800 mb-2">Vision</h4>
-                <p className="text-gray-700">
-                  To be the leading legal service provider in South Sudan.
-                </p>
-              </div>
-            </div>
+            </DelayedFadeIn>
           </div>
         </div>
       </div>
