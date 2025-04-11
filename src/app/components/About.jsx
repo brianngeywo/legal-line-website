@@ -19,15 +19,11 @@ export default function About() {
           <div className="flex flex-col items-center sm:flex-row sm:items-start sm:min-h-[400px]">
             {/* Image Section */}
             <div className="w-full sm:w-1/2 mb-8 sm:mb-0 sm:pr-8 h-[300px] sm:h-[400px]">
-              <DelayedFadeIn>
-                
-                delay={300}
-                <img
-                  src="/images/lawyer.jpg"
-                  alt="About Legal Line"
-                  className="rounded-lg shadow-lg w-full h-full object-cover"
-                />
-              </DelayedFadeIn>
+              <img
+                src="/images/lawyer.jpg"
+                alt="About Legal Line"
+                className="rounded-lg shadow-lg w-full h-full object-cover"
+              />
             </div>
 
             {/* Text Section */}
