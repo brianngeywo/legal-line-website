@@ -4,25 +4,25 @@ import Link from "next/link";
 
 export default function HeroBanner() {
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative h-screen w-full min-h-[600px]">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/legal-banner.jpg')" }}
       >
         <div className="absolute inset-0 bg-green-900/40"></div>
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col justify-center">
-        <div className="container mx-auto px-4 text-center text-white">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+      <div className="relative z-10 h-full flex flex-col justify-center px-4">
+        <div className="container mx-auto text-center text-white">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 md:mb-4">
             <span className="text-green-800">Legal</span> Line
           </h2>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6">
             Your Allies In Legal Matters
           </h1>
-          <p className="max-w-2xl mx-auto text-lg sm:text-xl mb-8">
+          <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-6 md:mb-8 px-2 sm:px-0">
             Welcome to Legal Line Law Chambers, your gateway to comprehensive
             legal expertise in South Sudan. As a top-tier full-service law firm,
             our team of skilled advocates stands ready to champion your
@@ -30,7 +30,7 @@ export default function HeroBanner() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-white text-green-800 font-bold px-8 py-4 rounded-lg text-lg transition-colors duration-300 mb-16"
+            className="inline-block bg-white text-green-800 font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg transition-colors duration-300 hover:bg-green-100 mb-8 md:mb-16 xs:mb-8"
           >
             Contact Us
           </Link>
@@ -38,13 +38,13 @@ export default function HeroBanner() {
       </div>
 
       {/* Floating Action Buttons */}
-      <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center w-full max-w-4xl mx-auto">
-        <div className="flex justify-center gap-6">
+      <div className="absolute bottom-4 sm:bottom-8 md:bottom-12 lg:bottom-[-50px] left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center w-full mx-auto">
           {/* Appointment Card */}
-          <div className="flex items-center bg-gray-100 shadow-lg rounded-lg overflow-hidden w-64 sm:w-72">
-            <div className="bg-[#163A5F] p-4 flex items-center justify-center">
+          <div className="flex items-center bg-gray-100 shadow-lg rounded-lg overflow-hidden w-full sm:w-56 md:w-64 lg:w-72">
+            <div className="bg-[#163A5F] p-3 md:p-4 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 md:w-6 md:h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -58,17 +58,19 @@ export default function HeroBanner() {
                 ></path>
               </svg>
             </div>
-            <div className="p-4">
-              <p className="text-gray-500 text-sm">Book Your</p>
-              <p className="font-semibold text-green-800">Appointment</p>
+            <div className="p-3 md:p-4">
+              <p className="text-gray-500 text-xs md:text-sm">Book Your</p>
+              <p className="font-semibold text-green-800 text-sm md:text-base">
+                Appointment
+              </p>
             </div>
           </div>
 
           {/* Consultation Card */}
-          <div className="flex items-center bg-gray-100 shadow-lg rounded-lg overflow-hidden w-64 sm:w-72">
-            <div className="bg-[#163A5F] p-4 flex items-center justify-center">
+          <div className="flex items-center bg-gray-100 shadow-lg rounded-lg overflow-hidden w-full sm:w-56 md:w-64 lg:w-72">
+            <div className="bg-[#163A5F] p-3 md:p-4 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 md:w-6 md:h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -82,17 +84,19 @@ export default function HeroBanner() {
                 ></path>
               </svg>
             </div>
-            <div className="p-4">
-              <p className="text-gray-500 text-sm">Get An</p>
-              <p className="font-semibold text-green-800">Expert Advice</p>
+            <div className="p-3 md:p-4">
+              <p className="text-gray-500 text-xs md:text-sm">Get An</p>
+              <p className="font-semibold text-green-800 text-sm md:text-base">
+                Expert Advice
+              </p>
             </div>
           </div>
 
           {/* Careers Card */}
-          <div className="flex items-center bg-gray-100 shadow-lg rounded-lg overflow-hidden w-64 sm:w-72">
-            <div className="bg-[#163A5F] p-4 flex items-center justify-center">
+          <div className="flex items-center bg-gray-100 shadow-lg rounded-lg overflow-hidden w-full sm:w-56 md:w-64 lg:w-72">
+            <div className="bg-[#163A5F] p-3 md:p-4 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 md:w-6 md:h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -106,9 +110,13 @@ export default function HeroBanner() {
                 ></path>
               </svg>
             </div>
-            <div className="p-4">
-              <p className="text-gray-500 text-sm">Open For Hiring</p>
-              <p className="font-semibold text-green-800">Join Our Team</p>
+            <div className="p-3 md:p-4">
+              <p className="text-gray-500 text-xs md:text-sm">
+                Open For Hiring
+              </p>
+              <p className="font-semibold text-green-800 text-sm md:text-base">
+                Join Our Team
+              </p>
             </div>
           </div>
         </div>
