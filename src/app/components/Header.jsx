@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -31,8 +32,18 @@ export default function Header() {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-green-800">
-                LegalLine
+              <Link href="/" className="flex items-center space-x-2">
+                <Image
+                  src="/images/logo2.jpg"
+                  alt="E&J Financial Consultancy Logo"
+                  width={180}
+                  height={60}
+                  className="h-12 w-auto"
+                  priority
+                />
+                <span className="text-xl font-bold text-green-800 block">
+                  E&J Consultancy
+                </span>
               </Link>
             </div>
 
@@ -139,15 +150,6 @@ export default function Header() {
               >
                 Practice Areas
               </Link>
-              {/* <Link
-                href="#attorneys"
-                className="hover:text-blue-200 font-medium"
-              >
-                Attorneys
-              </Link> */}
-              {/* <Link href="#blog" className="hover:text-blue-200 font-medium">
-                Blog
-              </Link> */}
               <Link href="#contact" className="hover:text-blue-200 font-medium">
                 Contact
               </Link>
@@ -238,20 +240,6 @@ export default function Header() {
               >
                 Practice Areas
               </Link>
-              {/* <Link
-                href="#attorneys"
-                className="text-gray-800 hover:text-blue-600 font-medium"
-                onClick={toggleMenu}
-              >
-                Attorneys
-              </Link>
-              <Link
-                href="#blog"
-                className="text-gray-800 hover:text-blue-600 font-medium"
-                onClick={toggleMenu}
-              >
-                Blog
-              </Link> */}
               <Link
                 href="#contact"
                 className="text-gray-800 hover:text-blue-600 font-medium"
