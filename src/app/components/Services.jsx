@@ -1,41 +1,66 @@
 // src/app/components/Services.jsx
 import DelayedFadeIn from "../effects/DelayedFadeIn";
+import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   const services = [
     {
-      title: "Corporate Law",
+      title: "Tax Advisory & Compliance",
       description:
-        "Legal advice for businesses including incorporation, contracts, and compliance.",
-      icon: "🏢",
+        "Navigating tax regulations in South Sudan and East Africa can be complex. Our experts provide:",
+      features: [
+        "Corporate & Individual Tax Planning",
+        "Tax Compliance & Reporting",
+        "Cross-Border Tax Advisory",
+        "Tax Dispute Resolution",
+      ],
+      cta: "Optimize Your Tax Strategy Today",
     },
     {
-      title: "Family Law",
+      title: "Audit & Assurance",
       description:
-        "Divorce, child custody, adoption, and other family-related legal matters.",
-      icon: "👨‍👩‍👧‍👦",
+        "We ensure financial transparency and regulatory compliance through:",
+      features: [
+        "Statutory & Internal Audits",
+        "Financial Statement Reviews",
+        "Compliance Audits",
+        "Special Purpose Audits",
+      ],
+      cta: "Schedule an Audit",
     },
     {
-      title: "Property Law",
+      title: "Risk & Financial Advisory",
+      description: "Mitigate risks and enhance financial performance with:",
+      features: [
+        "Enterprise Risk Management",
+        "Financial Due Diligence",
+        "Business Valuation",
+        "Corporate Restructuring",
+      ],
+      cta: "Strengthen Your Financial Strategy",
+    },
+    {
+      title: "Forensic & Investigation Services",
+      description: "Uncover financial discrepancies and fraud with:",
+      features: [
+        "Fraud Investigations",
+        "Litigation Support",
+        "Asset Recovery",
+        "Anti-Corruption Compliance",
+      ],
+      cta: "Protect Your Business from Fraud",
+    },
+    {
+      title: "Managed Services (Including Legal Managed Services)",
       description:
-        "Land disputes, property transactions, and real estate legal services.",
-      icon: "🏠",
-    },
-    {
-      title: "Immigration Law",
-      description: "Visa applications, work permits, and residency issues.",
-      icon: "🛂",
-    },
-    {
-      title: "Criminal Defense",
-      description:
-        "Representation in criminal cases at all levels of the judicial system.",
-      icon: "⚖️",
-    },
-    {
-      title: "Legal Consultancy",
-      description: "General legal advice and opinion on various matters.",
-      icon: "💼",
+        "Outsource your financial and legal operations seamlessly with:",
+      features: [
+        "Legal Compliance & Advisory",
+        "Contract Management",
+        "Payroll & Accounting Outsourcing",
+        "Regulatory Monitoring",
+      ],
+      cta: "Streamline Your Operations",
     },
   ];
 
@@ -49,17 +74,10 @@ export default function Services() {
           <div className="w-16 md:w-20 h-1 bg-green-700 mx-auto"></div>
         </div>
 
-        {/* Grid Layout - mobile-first */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <DelayedFadeIn delay={300} key={index}>
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="text-3xl md:text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
+              <ServiceCard service={service} />
             </DelayedFadeIn>
           ))}
         </div>

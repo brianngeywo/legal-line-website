@@ -72,9 +72,9 @@ export default function Contact() {
 
                 <DelayedFadeIn delay={300}>
                   <div>
-                    <h4 className="font-medium text-gray-800">Address</h4>
+                    <h4 className="font-medium text-gray-800">Headquarters </h4>
                     <p className="text-gray-600">
-                      123 Legal Avenue, Juba, South Sudan
+                      Malakia – MCC building First floor, Juba, South Sudan
                     </p>
                   </div>
                 </DelayedFadeIn>
@@ -105,7 +105,9 @@ export default function Contact() {
                       <h4 className="font-medium text-gray-800">Phone</h4>
                     </DelayedFadeIn>
                     <DelayedFadeIn delay={300}>
-                      <p className="text-gray-600">+211 123 456 789</p>
+                      <p className="text-gray-600">
+                        +211 924999781 / +211 911291626
+                      </p>
                     </DelayedFadeIn>
                   </div>
                 </DelayedFadeIn>
@@ -137,9 +139,7 @@ export default function Contact() {
                     </DelayedFadeIn>
 
                     <DelayedFadeIn delay={300}>
-                      <p className="text-gray-600">
-                        info@legallinesouthsudan.com
-                      </p>
+                      <p className="text-gray-600">info@ejfinancial.com</p>
                     </DelayedFadeIn>
                   </div>
                 </DelayedFadeIn>

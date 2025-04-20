@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroBanner from "./components/HeroBanner";
 import Services from "./components/Services";
-
+import WhyChooseUs from "./components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -13,7 +13,8 @@ export default function Home() {
       <Header />
       <HeroBanner />
       <About />
-        <Services />
+      <Services />
+      <WhyChooseUs />
       <Contact />
       <Footer />
     </main>

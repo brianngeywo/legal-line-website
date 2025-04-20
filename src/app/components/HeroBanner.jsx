@@ -19,19 +19,17 @@ export default function HeroBanner() {
         <div className="container mx-auto text-center text-white">
           <DelayedFadeIn delay={300}>
             <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 md:mb-4">
-              <span className="text-green-800">Legal</span> Line
+              <span className="text-green-800">E&J</span> Financial Consultancy
             </h2>
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6">
-              Your Allies In Legal Matters
+              {/* Welcome to E&J Financial Consultancy */}
             </h1>
             <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-6 md:mb-8 px-2 sm:px-0">
-              Welcome to Legal Line Law Chambers, your gateway to comprehensive
-              legal expertise in South Sudan. As a top-tier full-service law
-              firm, our team of skilled advocates stands ready to champion your
-              interests in various fields of law.
+              Your Trusted Financial Consultancy Partner in Juba, South Sudan &
+              East Africa
             </p>
             <Link
-              href="/contact"
+              href="#contact"
               className="inline-block bg-white text-green-800 font-bold px-6 py-3 md:px-8 md:py-4 rounded-lg text-base md:text-lg transition-colors duration-300 hover:bg-green-100 mb-8 md:mb-16 xs:mb-8"
             >
               Contact Us
