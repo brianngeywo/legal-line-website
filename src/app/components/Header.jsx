@@ -83,7 +83,7 @@ export default function Header() {
                   />
                 </svg>
                 <span className="text-sm font-medium text-gray-900">
-                  +211 921 648 642
+                  +211 924999781 +211 911291626
                 </span>
               </div>
 
@@ -204,7 +204,7 @@ export default function Header() {
                   />
                 </svg>
                 <span className="text-sm font-medium text-black">
-                  +211 924999781 / +211 911291626{" "}
+                  +211 924999781 +211 911291626
                 </span>
               </div>
 
